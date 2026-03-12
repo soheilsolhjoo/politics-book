@@ -1,0 +1,13 @@
+{% import "partials/social.html" as social with context %}
+
+<footer class="md-footer" style="border-top: none !important; margin-top: 3rem !important;">
+  <div class="md-footer__inner md-grid" style="border-top: none !important; display: flex !important; justify-content: center !important; padding: 2rem 0 !important;">
+    {% include "partials/copyright.html" %}
+  </div>
+  
+  {% if social.links %}
+    <div class="md-footer-social" style="text-align: center; padding-bottom: 1rem;">
+      {{ social.links }}
+    </div>
+  {% endif %}
+</footer>

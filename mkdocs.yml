@@ -1,0 +1,76 @@
+site_name: کتابِ سیاست
+site_url: https://soheilsolhjoo.github.io/politics-book/
+repo_url: https://github.com/soheilsolhjoo/politics-book
+repo_name: soheilsolhjoo/politics-book
+site_description: تاریخ فلسفه و نظریه سیاسی
+site_author: Soheil Solhjoo
+docs_dir: docs
+site_dir: site
+theme:
+  name: material
+  custom_dir: overrides
+  language: fa
+  direction: rtl
+  logo: logo.jpg
+  favicon: logo.jpg
+  features:
+  - navigation.sections
+  - navigation.expand
+  - navigation.top
+  - toc.integrate
+  - content.tooltips
+  - navigation.indexes
+  palette:
+  - scheme: light
+    primary: indigo
+    accent: indigo
+extra_css:
+- stylesheets/custom_v14.css
+extra_javascript:
+- javascripts/font-control.js
+markdown_extensions:
+- extra
+- admonition
+- footnotes
+- pymdownx.superfences
+- codehilite
+- toc:
+    toc_depth: 2
+    title: در این صفحه
+- tables
+extra:
+  copyright: © Soheil Solhjoo
+  website: https://www.solhjoo.com/
+  website_name: solhjoo.com
+nav:
+- کتابِ سیاست:
+  - index.md
+  - پیشگفتار: ch-00-پیشگفتار.md
+- اندیشه‌های سیاسیِ دنیایِ باستان:
+  - ch-01-ancient-ideas/index.md
+  - کنفوسیوس: ch-01-ancient-ideas/01-کنفوسیوس.md
+  - سون تزو: ch-01-ancient-ideas/02-سون-تزو.md
+  - موزی: ch-01-ancient-ideas/03-موزی.md
+  - افلاطون: ch-01-ancient-ideas/04-افلاطون.md
+  - ارسطو: ch-01-ancient-ideas/05-ارسطو.md
+  - چاناکیا: ch-01-ancient-ideas/06-چاناکیا.md
+  - هان فی تسو: ch-01-ancient-ideas/07-هان-فی-تسو.md
+  - سیسرو: ch-01-ancient-ideas/08-سیسرو.md
+- سیاست در قرون وسطی:
+  - ch-02-medieval/index.md
+  - آگوستینِ هیپو (آگوستین قدیس): ch-02-medieval/01-آگوستین-هیپو-آگوستین-قدیس.md
+  - محمد: ch-02-medieval/02-محمد.md
+  - فارابی: ch-02-medieval/03-فارابی.md
+  - بارُن‌های پادشاه جان: ch-02-medieval/04-بارنهای-پادشاه-جان.md
+  - توماس آکویناس: ch-02-medieval/05-توماس-آکویناس.md
+  - ژیلِ رومی: ch-02-medieval/06-ژیل-رومی.md
+  - مارسیلیوسِ پادوا: ch-02-medieval/07-مارسیلیوس-پادوا.md
+  - ابن‌خلدون: ch-02-medieval/08-ابنخلدون.md
+  - نیکولو ماکیاولی: ch-02-medieval/09-نیکولو-ماکیاولی.md
+- عقل‌گرایی و روشنگری:
+  - ch-03-enlightenment/index.md
+
+
+
+
+

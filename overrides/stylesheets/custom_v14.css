@@ -1,0 +1,203 @@
+/* ============================================================================
+   CORE TYPOGRAPHY & VARIABLES
+   ============================================================================ */
+
+:root {
+  /* Base font size for the whole book. 
+     21px is chosen for premium readability in Persian script. */
+  --base-font-size: 21px;
+}
+
+/* Regular Trado Font */
+@font-face {
+  font-family: 'Trado';
+  src: url('../assets/fonts/trado.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold Trado Font */
+@font-face {
+  font-family: 'Trado';
+  src: url('../assets/fonts/tradbdo.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Apply Trado font to all body text and content areas */
+body,
+.md-typeset {
+  font-family: 'Trado', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-size: var(--base-font-size) !important;
+  line-height: 1.7; /* Increased line-height for better Persian reading flow */
+}
+
+/* ============================================================================
+   QUOTE STYLING (Classical Elegant Look)
+   ============================================================================ */
+
+.md-typeset blockquote {
+  background-color: #f8f8f8 !important;
+  /* Padding and Margins are matched exactly with Biography Boxes for a unified look */
+  padding: 2rem 3.5rem 1.5rem 1.5rem !important; 
+  margin: 2.5rem 0 !important;
+  border-radius: 12px !important;
+  font-style: italic !important;
+  color: #0d47a1 !important; /* Professional Blue color for quotations */
+  position: relative !important;
+  border-right: none !important;
+  border-left: none !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08) !important;
+}
+
+/* Large decorative quotation mark at the start of quotes */
+.md-typeset blockquote::before {
+  content: '“' !important;
+  position: absolute !important;
+  right: 0.8rem !important;
+  top: 0rem !important;
+  font-size: 6rem !important;
+  color: #e0e0e0 !important;
+  font-family: Georgia, serif !important;
+  line-height: 1 !important;
+  z-index: 0 !important;
+}
+
+.md-typeset blockquote p {
+  margin: 0.8rem 0;
+  position: relative;
+  z-index: 1; /* Ensure text sits above the large background symbol */
+}
+
+/* ============================================================================
+   SIDEBAR NAVIGATION (Hierarchy Fixes)
+   ============================================================================ */
+
+/* Main Navigation items size (Left Sidebar) */
+.md-nav--primary .md-nav__link {
+  font-size: 19px;
+}
+
+/* Indent Subsections (Level 2) to distinguish from main chapters */
+.md-nav--primary .md-nav__list .md-nav__list .md-nav__link {
+  padding-right: 2rem !important;
+  font-size: 17.5px;
+  opacity: 0.85;
+}
+
+/* Make Sub-subsections (Level 3) BOLD for easier identification */
+.md-nav--primary .md-nav__list .md-nav__list .md-nav__list .md-nav__link {
+  font-weight: bold !important;
+  opacity: 1 !important;
+  color: #0d47a1 !important;
+}
+
+/* Right Table of Contents Title */
+.md-nav__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ============================================================================
+   FONT SIZE CONTROLS (Header Buttons)
+   ============================================================================ */
+
+/* Ensure the control buttons (A-, A, A+) stay constant size when scaling text */
+.md-header__font-controls button {
+  font-size: 16px !important;
+}
+
+#font-decrease { font-size: 14px !important; }
+#font-reset    { font-size: 18px !important; }
+#font-increase { font-size: 22px !important; }
+
+/* ============================================================================
+   FOOTER (Clean & High Contrast)
+   ============================================================================ */
+
+/* Hide the default "Powered by MkDocs" attribution links */
+.md-footer a[href*="squidfunk"],
+.md-footer a[href*="mkdocs-material"] {
+  display: none !important;
+}
+
+/* Remove horizontal lines from the footer for a modern minimalist finish */
+.md-footer, 
+.md-footer__inner,
+.md-footer-meta {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  margin-top: 3rem !important;
+  padding-top: 0 !important;
+}
+
+/* Standardize the copyright line to high-contrast black and LTR direction */
+.md-footer__copyright {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  direction: ltr !important;
+  color: #000000 !important;
+  font-size: 1rem !important;
+  font-family: 'Trado', sans-serif !important;
+}
+
+/* ============================================================================
+   CUSTOM ADMONITIONS (Colored Highlight Boxes)
+   ============================================================================ */
+
+/* Info Box - Light Yellow (used for quick data/stats at top of page) */
+.md-typeset .admonition.info-box {
+  border-right: .5rem solid #ffd600 !important;
+  background-color: #fffde7 !important;
+  border-left: none !important;
+  margin: 2.5rem 0 !important;
+  padding: 2rem !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+}
+
+/* Biography Box - Light Green (used for thinker life stories) */
+.md-typeset .admonition.biography {
+  border-right: .5rem solid #4caf50 !important;
+  background-color: #f1f8e9 !important;
+  border-left: none !important;
+  margin: 2.5rem 0 !important;
+  padding: 2rem !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08) !important;
+}
+
+/* Text styles inside both types of highlight boxes */
+.md-typeset .admonition.info-box, 
+.md-typeset .admonition.biography,
+.md-typeset .admonition.info-box *,
+.md-typeset .admonition.biography * {
+  line-height: 1.8 !important;
+  font-family: 'Trado', serif !important;
+}
+
+/* Hide title bars for a cleaner "box" look */
+.md-typeset .admonition.info-box > .admonition-title,
+.md-typeset .admonition.biography > .admonition-title {
+  display: none !important;
+}
+
+/* Specific font size scaling for boxes relative to body text */
+.md-typeset .admonition.info-box *,
+.md-typeset .admonition.biography * {
+  font-size: calc(var(--base-font-size) * 1.15) !important; /* Slightly larger */
+}
+
+/* Ensure h3 (sub-subsections) in content are bold and blue as preferred */
+.md-typeset h3 {
+  font-weight: bold !important;
+  color: #0d47a1 !important;
+}
+
+/* Increase footnote font size */
+.md-typeset .footnote {
+  font-size: 18px !important;
+}

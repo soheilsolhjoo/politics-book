@@ -1,0 +1,14 @@
+{% set copyright = config.extra.get("copyright") or config.copyright %}
+<div class="md-footer-meta md-typeset">
+  <div class="md-footer-meta__inner md-grid">
+    {% if copyright %}
+      <div class="md-copyright">
+        {{ copyright }}
+        {%- if config.extra.get("website") %}
+          &bull;
+          <a href="{{ config.extra.get("website") }}" target="_blank" rel="noopener">{{ config.extra.get("website_name", "solhjoo.com") }}</a>
+        {%- endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
