@@ -26,4 +26,4 @@
 
 برای شروع مطالعه، از منوی سمت راست (در دسکتاپ) یا آیکون منو (در موبایل) استفاده کنید.
 
-[^1]: TarzabanG: https://github.com/soheilsolhjoo/TarzabanG
+[^1]: https://github.com/soheilsolhjoo/TarzabanG
