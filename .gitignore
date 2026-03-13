@@ -1,0 +1,13 @@
+# Built website
+site/
+
+# Archive and logs
+archive/
+
+# Python temporary files
+__pycache__/
+*.py
+
+# System files
+.DS_Store
+Thumbs.db
