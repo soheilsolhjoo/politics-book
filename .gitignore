@@ -1,9 +1,10 @@
 # Built website
 site/
 
-# Archive and logs
+# Archive and extra notes
 archive/
 EDITING_GUIDE.md
+related_mapping.json
 
 # Python temporary files
 __pycache__/
