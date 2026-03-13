@@ -3,6 +3,7 @@ site/
 
 # Archive and logs
 archive/
+EDITING_GUIDE.md
 
 # Python temporary files
 __pycache__/
