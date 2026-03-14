@@ -5,7 +5,7 @@ site/
 archive/
 translate_raw/
 EDITING_GUIDE.md
-related_mapping.json
+*.json
 
 # Python & related temporary files
 __pycache__/
