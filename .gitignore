@@ -3,12 +3,14 @@ site/
 
 # Archive and extra notes
 archive/
+translate_raw/
 EDITING_GUIDE.md
 related_mapping.json
 
-# Python temporary files
+# Python & related temporary files
 __pycache__/
 *.py
+*.Identifier
 
 # System files
 .DS_Store
