@@ -2,7 +2,7 @@
 
 ## 🌐 مطالعه آنلاین
 برای تجربه کاملِ مطالعه با تایپوگرافیِ بهینه و امکاناتِ جستجو، از لینکِ زیر استفاده کنید:
-**[https://politics.solhjoo.com/](https://politics.solhjoo.com/)**
+**[https://politics.solhjoo.com](https://politics.solhjoo.com)**
 
 ---
 
