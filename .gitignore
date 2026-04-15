@@ -6,6 +6,7 @@ archive/
 translate_raw/
 EDITING_GUIDE.md
 *.json
+mkdocs.yml
 
 # Python & related temporary files
 __pycache__/
